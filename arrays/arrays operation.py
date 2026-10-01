@@ -33,3 +33,13 @@ def search(el,a):
     print(f'{el} is not found')
 a=search(2,a)
 
+a=[3,1,4,1,5,9,2,6]
+def prefixsumarray(a):
+  arr=[]
+  sum=0
+  for i in a:
+    sum+=i
+    arr.append(sum)
+  return arr
+res=prefixsumarray(a)
+print(res[5]-res[2-1])
